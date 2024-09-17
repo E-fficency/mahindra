@@ -19,7 +19,7 @@ const CardsSlider = () => {
   }, []);
 
   return (
-    <section className="my-6 p-5 border border-black">
+    <section className="my-6 border-y py-5 border-black">
       <div className="flex flex-col justify-center text-center mb-4 gap-2">
         <div className="flex items-center justify-center gap-2">
           <h1 className="flex text-[2rem] font-semibold justify-center">

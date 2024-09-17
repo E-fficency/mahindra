@@ -6,10 +6,13 @@ import Header from "./components/Header";
 function App() {
   return ( 
     <>
+    <main className="px-5">
+
       <Header />
       <FuturoVelocidade />
       <CardsSwiper/>
       <Footer />
+    </main>
     </>
   );
 }

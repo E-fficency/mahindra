@@ -10,7 +10,7 @@ const Footer = () => {
 
     // a logo tem que ficar no meio no pc (nao sei como fazer isso)
     <>
-      <footer className="flex flex-col items-center justify-center py-8 px-4 gap-10 mt-8 xl:flex-row-reverse ">
+      <footer className="flex flex-col items-center justify-center py-8 gap-10 mt-8 xl:flex-row-reverse ">
           <div className="flex justify-center ">
             <img className="w-[105px]" src={Logo} alt="Logo" />
           </div>
