@@ -1,3 +1,4 @@
+import Footer from "./components/Footer"
 import FuturoVelocidade from "./components/FuturoVelocidade"
 import Header from "./components/Header"
 
@@ -6,6 +7,7 @@ function App() {
     <>
       <Header/>
       <FuturoVelocidade/>
+      <Footer/>
     </>
   )
 }
