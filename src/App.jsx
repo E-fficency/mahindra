@@ -1,15 +1,16 @@
-import Footer from "./components/Footer"
-import FuturoVelocidade from "./components/FuturoVelocidade"
-import Header from "./components/Header"
+import CardsSlider from "./components/CardsSlider";
+import Footer from "./components/Footer";
+import FuturoVelocidade from "./components/FuturoVelocidade";
+import Header from "./components/Header";
 
-function App() { 
-  return (
+function App() {
+  return ( 
     <>
-      <Header/>
-      <FuturoVelocidade/>
-      <Footer/>
+      <Header />
+      <FuturoVelocidade />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
