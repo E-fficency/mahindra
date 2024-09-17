@@ -1,9 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import cards from "../../mocks/cards";
 import CardCorrida from "../CardCorrida";
-import "swiper/css";
 import { useEffect, useState } from "react";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+import "swiper/css";
 
 const CardsSlider = () => {
   const [slidesPerView, setSlidesPerView] = useState(2);
