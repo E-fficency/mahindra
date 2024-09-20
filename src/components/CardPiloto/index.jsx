@@ -1,8 +1,9 @@
 import Br from '../../assets/flags/br.svg';
-import NicoMuller from '../../assets/Times FE/ABT/Lucas Di Grassi.png';
-import ABT from '../../assets/times/abt.svg';
+import NicoMuller from '../../assets/Times FE/ABT/Nico Muller.png'
+import ABT from '../../assets/Times FE/NEOM MCLAREN/NEOM McLaren.svg';
+// import times from '../../mocks/times'
 
-const CardPiloto = ({ nome, sobrenome, bandeira }) => {
+const CardPiloto = () => {
   return (
     // ainda vou fazer o mock com os nomes e bandeiras
     <>
