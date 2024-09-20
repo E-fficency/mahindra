@@ -5,3 +5,9 @@
 *{
     font-family: "Exo 2", sans-serif;
 }
+
+@layer{
+    .custom-item {
+        @apply flex items-center justify-between font-medium text-2xl;
+      }
+}

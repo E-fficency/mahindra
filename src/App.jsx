@@ -1,20 +1,25 @@
-import CardsSwiper from "./components/CardsSwiper";
-import Footer from "./components/Footer";
-import FuturoVelocidade from "./components/FuturoVelocidade";
-import GridE from "./components/GridE";
 import Header from "./components/Header";
-import MelhoresMomentos from "./components/MelhoresMomentos";
+import Footer from './components/Footer'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Pilotos from "./pages/Pilotos";
+import Corridas from "./pages/Corridas";
 
 function App() {
   return ( 
     <>
-    <main className="px-5">
-      <Header />
-      <FuturoVelocidade />
-      <CardsSwiper/>
-      <GridE/>
-      <MelhoresMomentos/>
-      <Footer />
+    <main className="px-5 xl:px-12 dark:bg-[#333333]">
+      <BrowserRouter>
+      {/* O header e o footer estão fora da tag routes pq eles aparecem em todas as paginas e não precisam de uma rota específica */}
+      <Header/>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/pilotos" element={<Pilotos/>} />
+          <Route path="/corridas" element={<Corridas/>}/>
+        </Routes>
+      </BrowserRouter>
+
+      <Footer/>
     </main>
     </>
   );

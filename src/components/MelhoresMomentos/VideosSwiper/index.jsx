@@ -1,24 +1,33 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import videos from '../../../mocks/melhoresMomentos'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import melhoresMomentos from '../../../mocks/melhoresMomentos';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+
 
 const VideosSwiper = () => {
-    return (  
-        <>
-            <Swiper slidesPerView={1} spaceBetween={50} navigation>
-                {videos.map((video) => (
-                    <SwiperSlide key={video.id}>
-                       <iframe className="rounded-xl" width="350" height="355" src={video.link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-                    </SwiperSlide>
-                ))}
-            </Swiper>
-        </>
-    );
-}
- 
+  return (
+    <Swiper 
+      navigation={true} 
+      modules={[Navigation]} 
+      className="w-full"
+    >
+      {melhoresMomentos.map((video, index) => (
+        <SwiperSlide key={index++}>
+          <iframe
+            className="rounded-xl m-auto"
+            width="90%"
+            height="350"
+            src={video.link}
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  );
+};
 
 export default VideosSwiper;

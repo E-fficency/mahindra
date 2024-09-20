@@ -1,4 +1,4 @@
-const melhoresMomentos = [
+export const melhoresMomentos = [
     {
         id: 1,
         link: "https://www.youtube.com/embed/wFgGID0RwVU?si=MSNx6hx7i-gS_Z88"
