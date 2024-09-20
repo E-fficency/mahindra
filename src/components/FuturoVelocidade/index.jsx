@@ -9,8 +9,8 @@ const FuturoVelocidade = () => {
           <span className="text-transparent bg-clip-text bg-text-gradient mb-1">O futuro</span> da velocidade
         </h1>
       </div>
-        <div>
-          <img src={Model} alt="Modelo 3d de carro de Formula E" />
+        <div className="">
+          <iframe src="https://m4tiolli.github.io/obj/" className="border-0 border-none"/>
         </div>
     </section>
     </>

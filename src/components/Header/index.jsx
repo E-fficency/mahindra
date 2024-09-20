@@ -26,7 +26,7 @@ const Header = () => {
       setComponentShow(components[0]);
     }
   });
-  
+
   return (
     <>
       <header>
