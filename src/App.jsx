@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Pilotos from "./pages/Pilotos";
 import Corridas from "./pages/Corridas";
+import Classificacao from "./pages/Classificacao";
 
 function App() {
   return ( 
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/pilotos" element={<Pilotos/>} />
           <Route path="/corridas" element={<Corridas/>}/>
+          <Route path="/classificacao" element={<Classificacao />}/>
         </Routes>
       </BrowserRouter>
 
