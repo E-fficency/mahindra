@@ -2,12 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    font-family: "Exo 2", sans-serif;
+* {
+  font-family: 'Exo 2', sans-serif;
 }
 
-@layer{
-    .custom-item {
-        @apply flex items-center justify-between font-medium text-2xl;
-      }
+@layer {
+  .custom-item {
+    @apply flex items-center justify-between font-medium text-2xl;
+  }
+}
+
+.linkes::after {
+  content: ' ';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: rgb(30, 92, 230);
+  background: linear-gradient(90deg, #14B7ED 0%, #0554F2 100%);
+  border-radius: 10px;
+  transition: width 0.2s ease-in;
+  margin: auto;
+}
+
+.linkes:hover::after {
+  width: 100%;
 }
