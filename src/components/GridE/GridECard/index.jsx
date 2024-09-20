@@ -3,7 +3,7 @@ import { IoIosHeart } from "react-icons/io";
 
 const GridECard = () => {
   return (
-    <div className="flex flex-col justify-center items-center bg-[#B1BDC5] rounded-lg shadow-grid-shadow mt-7 py-7">
+    <div className="flex flex-col justify-center items-center bg-[#B1BDC5] rounded-lg shadow-grid-shadow mt-7 py-7 dark:bg-[#B1BDC5]">
       <img className="w-32 bg-white rounded-full p-6" src={User} />
       <h2 className="font-bold text-xl mt-3">User</h2>
       <span className="flex items-center gap-1">

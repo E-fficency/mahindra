@@ -19,10 +19,10 @@ const CardsSlider = () => {
   }, []);
 
   return (
-    <section className="my-6 border-y py-5 border-black">
-      <div className="flex flex-col justify-center text-center mb-4 gap-2">
+    <section className="my-6 border-y py-5 border-black text-black dark:border-white">
+      <div className="flex flex-col justify-center text-center mb-4 gap-2 dark:text-white">
         <div className="flex items-center justify-center gap-2">
-          <h1 className="flex text-[2rem] font-semibold justify-center">
+          <h1 className="flex text-[2rem] font-semibold justify-center ">
             Próximas corridas
           </h1>
           <MdKeyboardDoubleArrowRight size={35} />

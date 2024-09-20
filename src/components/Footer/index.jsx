@@ -1,4 +1,4 @@
-import Logo from "../../assets/logo.svg";
+import Logo from "../../assets/logo/logo.svg"
 import Snapchat from "../../assets/icons_footer/Snapchat.svg";
 import Instagram from "../../assets/icons_footer/Instagram.svg";
 import Twitter from "../../assets/icons_footer/TwitterX.svg";
@@ -10,11 +10,11 @@ const Footer = () => {
 
     // a logo tem que ficar no meio no pc (nao sei como fazer isso)
     <>
-      <footer className="flex flex-col items-center justify-center py-8 gap-10 mt-8 xl:flex-row-reverse ">
+      <footer className="flex flex-col items-center justify-between py-8 gap-10 mt-2 xl:flex-row dark:text-white">
           <div className="flex justify-center ">
             <img className="w-[105px]" src={Logo} alt="Logo" />
           </div>
-
+          
           <div className="flex justify-evenly gap-4">
             <img src={Snapchat} alt="Snapchat logo" />
             <img src={TikTok} alt="Snapchat logo" />
