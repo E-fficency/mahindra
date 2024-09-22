@@ -1,5 +1,6 @@
 import CardPiloto from "../../components/CardPiloto";
 
+
 const Pilotos = () => {
   return (
     <>
@@ -8,7 +9,7 @@ const Pilotos = () => {
         <p className="font-light text-lg">Confira os pilotos da temporada</p>
       </div>
 
-      <CardPiloto />
+      <CardPiloto/>
     </>
   );
 };
