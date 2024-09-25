@@ -15,7 +15,7 @@ const Register = () => {
   }, [])
   return (
     <>
-      <div className="flex justify-center py-12 border-y border-b-black dark: border-b-white">
+      <div className="flex justify-center py-12 border-y border-b-black dark: border-white">
         <img src={Logo} className="w-1/6" />
       </div>
       <form>

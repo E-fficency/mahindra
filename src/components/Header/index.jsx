@@ -43,7 +43,7 @@ const Header = () => {
             </Link>
             {componentShow}
             <button className="hover:opacity-60 transition-all">
-              <img src={User} alt="Icone user" />
+              <Link to={'/perfil'}><img src={User} alt="Icone user" /></Link>
             </button>
           </nav>
         </header>

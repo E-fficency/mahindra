@@ -8,6 +8,7 @@ import Classificacao from "./pages/Classificacao";
 import Equipes from "./pages/Equipes";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Perfil from "./pages/Perfil";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/corridas" element={<Corridas />} />
             <Route path="/classificacao" element={<Classificacao />} />
             <Route path="/equipes" element={<Equipes />} />
+            <Route path="perfil" element={<Perfil/>}/>
           </Routes>
         <Footer />
         </BrowserRouter>
