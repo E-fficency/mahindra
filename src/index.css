@@ -10,6 +10,9 @@
   .custom-item {
     @apply flex items-center justify-between font-medium text-2xl;
   }
+  .lista-card-piloto{
+    @apply flex items-center gap-4 text-2xl font-bold 
+  }
 }
 
 .linkes::after {
@@ -56,4 +59,13 @@
 
 .cardisgraca:hover {
   background-size: 100% 200%;
+}
+
+.imagem-carro{
+  transform: translateX(10px)
+}
+
+.card-equipe:hover .imagem-carro{
+  transform: translateX(-20px);
+  transition: all ease-out 0.8s;
 }

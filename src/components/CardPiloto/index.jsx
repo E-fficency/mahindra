@@ -1,24 +1,34 @@
-import Br from '../../assets/flags/br.svg';
-import NicoMuller from '../../assets/Times FE/ABT/Lucas Di Grassi.png';
-import ABT from '../../assets/times/abt.svg';
+import times from "../../mocks/pilotos"; // Certifique-se de que o mock está importado corretamente
 
-const CardPiloto = ({ nome, sobrenome, bandeira }) => {
+const CardPiloto = () => {
   return (
-    // ainda vou fazer o mock com os nomes e bandeiras
     <>
-      <section className="flex flex-col items-center justify-center border-y border-b-black py-6 dark:border-b-white">
-        <img src={ABT} width={'150px'} />
-        <div className="cursor-pointer flex flex-col pt-10 overflow-clip cardisgraca items-center text-center rounded-lg px-3">
-          <div className="flex flex-col items-center textos">
-            <img src={Br} width={'25px'} />
-            <h2 className="font-medium text-2xl dark:text-white">LUCAS</h2>
-            <h2 className="font-medium text-[#5073F1] text-2xl">DI GRASSI</h2>
+      {times.map((time, index) => (
+        <section key={index} className="flex flex-col items-center justify-center border-y border-b-black py-6 dark:border-b-white">
+          {/* Logo do Time */}
+          <div>
+            <img src={time.time} width={"150px"} alt={`Logo do time ${time.time}`} />
           </div>
-          <div className="ibagem">
-            <img src={NicoMuller} />
+
+          <div className="flex flex-col gap-10 xl:flex-row">
+          {time.piloto.map((piloto, index) => (
+            <div key={index} className="cursor-pointer flex flex-col pt-10 overflow-clip cardisgraca items-center text-center rounded-lg px-3">
+              <div className="flex flex-col items-center textos">
+                {/* Banderinha nacionalidade */}
+                <img src={piloto.nacionalidade} width={"25px"} className="pb-2" />
+                {/* Nome do Piloto */}
+                <h2 className="font-medium text-2xl dark:text-white">{piloto.nome}</h2>
+                <h2 className="font-medium text-[#5073F1] text-2xl">{piloto.sobrenome}</h2>
+              </div>
+              <div className="ibagem">
+                  {/* Foto do piloto */}
+                {<img src={piloto.fotoPiloto} alt={`Foto de ${piloto.nome}`} /> }
+              </div>
+            </div>
+          ))}
           </div>
-        </div>
-      </section>
+        </section>
+      ))}
     </>
   );
 };

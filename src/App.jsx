@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Pilotos from "./pages/Pilotos";
 import Corridas from "./pages/Corridas";
 import Classificacao from "./pages/Classificacao";
+import Equipes from "./pages/Equipes";
 
 function App() {
   return ( 
@@ -18,6 +19,7 @@ function App() {
           <Route path="/pilotos" element={<Pilotos/>} />
           <Route path="/corridas" element={<Corridas/>}/>
           <Route path="/classificacao" element={<Classificacao />}/>
+          <Route path="/equipes" element={<Equipes/>}/>
         </Routes>
       </BrowserRouter>
 
