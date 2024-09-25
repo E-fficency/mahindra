@@ -28,7 +28,7 @@ const Header = () => {
     }
   });
 
-  if(location.pathname === '/login'){
+  if(location.pathname === '/login' || '/register'){
     return ''
   } else{
     return (
