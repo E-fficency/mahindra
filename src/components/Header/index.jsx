@@ -9,9 +9,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const components = [
-    // eslint-disable-next-line react/jsx-key
     <MenuHamburguer menuOpen={menuOpen} setMenuOpen={setMenuOpen} />,
-    // eslint-disable-next-line react/jsx-key
     <MenuHamburguerList />,
   ];
   const [componentShow, setComponentShow] = useState(components[0]);
@@ -19,7 +17,6 @@ const Header = () => {
     if (window.innerWidth > 768) {
       setComponentShow(components[1]);
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [window.innerWidth]);
 
   window.addEventListener('resize', function () {

@@ -15,7 +15,7 @@ const MenuHamburguerList = () => {
             </Link>
           </li>
           <li className="w-full linkes hover:opacity-80 transition-all">
-            <Link className="custom-item dark:text-white">
+            <Link to={'/equipes'} className="custom-item dark:text-white">
               Equipes
               <div className="xl:hidden">
                 <FaArrowRight />

@@ -10,6 +10,9 @@
   .custom-item {
     @apply flex items-center justify-between font-medium text-2xl;
   }
+  .lista-card-piloto{
+    @apply flex items-center gap-4 text-2xl font-bold text-[#0099FF]
+  }
 }
 
 .linkes::after {
