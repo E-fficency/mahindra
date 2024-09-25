@@ -28,9 +28,6 @@ const Header = () => {
     }
   });
 
-  if(location.pathname === '/login' || '/register'){
-    return ''
-  } else{
     return (
       <>
         <header>
@@ -52,7 +49,6 @@ const Header = () => {
         </header>
       </>
     );
-  }
 };
 
 export default Header;
