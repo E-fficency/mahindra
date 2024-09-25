@@ -60,3 +60,12 @@
 .cardisgraca:hover {
   background-size: 100% 200%;
 }
+
+.imagem-carro{
+  transform: translateX(10px)
+}
+
+.card-equipe:hover .imagem-carro{
+  transform: translateX(-20px);
+  transition: all ease-out 0.8s;
+}

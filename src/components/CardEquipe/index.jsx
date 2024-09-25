@@ -9,7 +9,7 @@ import Fundo from '../../assets/fundo.svg'
 const CardEquipe = () => {
     return (  
         <>
-             <div className="flex flex-col items-center px-6 py-6 rounded-xl w-full gap-4 relative z-10 overflow-hidden">
+             <div className="flex flex-col items-center px-6 py-6 rounded-xl w-full gap-4 relative z-10 overflow-hidden card-equipe">
                 <div className='flex justify-around w-full'>
                     <div>
                         <ul className='flex flex-col gap-3'>
@@ -22,11 +22,11 @@ const CardEquipe = () => {
                         <img src={ABT} alt="" />
                     </div>
                 </div>
-                <div className='relative left-1/3 w-[554px] h-[138px]'>
+                <div className='relative left-1/3 w-[554px] h-[138px] imagem-carro'>
                     <img src={ABTCarro} className=''/>
                 </div>
 
-                <img src={Fundo} className='absolute right-0 -z-10 bottom-0 h-full' />
+                <img src={Fundo} className='absolute right-0 -z-10 bottom-0 h-full'  />
             </div>
         </>
     );
