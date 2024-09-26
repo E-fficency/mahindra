@@ -67,7 +67,7 @@ const Header = () => {
                 <img src={User} alt="Icone user" />
               </Link>
             </button>
-            <button
+            {window.innerWidth > 768 ? <button
               className="cursor pointer rounded-full p-2 hover:opacity-60"
               onClick={toggleTheme}
             >
@@ -76,7 +76,8 @@ const Header = () => {
               ) : (
                 <IoSunnyOutline size={30} color="white" />
               )}
-            </button>
+            </button> : ''}
+            
           </div>
         </nav>
       </header>

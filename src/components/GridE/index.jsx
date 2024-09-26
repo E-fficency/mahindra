@@ -19,7 +19,7 @@ const GridE = () => {
   }, [])
 
   return (
-    <section className=" border-b-black py-6 dark:border-b-white">
+    <section className=" py-6 ">
       <div className="flex flex-col items-center text-center gap-4">
         {theme == 'dark' ? <img src={GridTittleWhite} /> : <img src={GridTittle}/> }
         <p className="text-xl dark:text-white">Monte seu pódio e ganhe pontos em ligas personalizadas</p>
