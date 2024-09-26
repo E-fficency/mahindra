@@ -68,7 +68,7 @@ const Header = () => {
               </Link>
             </button>
             <button
-              className="cursor pointer rounded-full p-2"
+              className="cursor pointer rounded-full p-2 hover:opacity-60"
               onClick={toggleTheme}
             >
               {theme === "light" ? (

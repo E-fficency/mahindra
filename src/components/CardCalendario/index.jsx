@@ -4,7 +4,7 @@ import BrFlag from "../../assets/flags/br.svg";
 const CardCalendario = () => {
   return (
     <>
-      <div className="flex rounded-3xl border justify-between border-black ">
+      <div className="flex rounded-3xl border justify-between border-black xl:justify-normal w-fit">
         <div className="flex flex-col p-4 gap-2">
           <div className="flex flex-col rounded-lg border items-center w-[50px] border-black font-bold">
             <p>07</p>
