@@ -33,18 +33,19 @@ import HEUERCarro from "../assets/Times FE/TAG HEUER PORSCHE/Tag Heuer carro.png
 import HEUERFundo from "../assets/Times FE/TAG HEUER PORSCHE/Fundo.svg";
 
 
-
 const equipes = [
     {
+        nome: 'ABT CUPRA FORMULA E TEAM',
         time: ABT,
         carro: ABTCarro,
         vitorias: 14,
         podios: 47,
-        corridas: 155,
+        corridas: 115,
         fundo: ABTFundo,
         cor: '#0099FF'
     },
     {
+        nome: 'ANDRETTI FORMULA E',
         time: ANDRETTI,
         carro: ANDRETTICarro,
         vitorias: 11,
@@ -54,6 +55,7 @@ const equipes = [
         cor: '#B82727'
     },
     {
+        nome: 'DS PENSKE',
         time: DSPENSKE,
         carro: DSPENSKECarro,
         vitorias: 3,
@@ -63,6 +65,7 @@ const equipes = [
         cor: '#CBA65F'
     },
     {
+        nome: 'ENVISION RACING',
         time: ENVISION,
         carro: ENVISIONCarro,
         vitorias: 16,
@@ -72,6 +75,7 @@ const equipes = [
         cor: '#00BE26'
     },
     {
+        nome: 'ERT FORMULA E TEAM',
         time: ERT,
         carro: ERTCarro,
         vitorias: 2,
@@ -81,15 +85,17 @@ const equipes = [
         cor: '#DEC800'
     },
     {
+        nome: 'JAGUAR TCS RACING',
         time: JAGUAR,
         carro: JAGUARCarro,
         vitorias: 16,
-        podios: 17,
-        corridas: 132,
+        podios: 46,
+        corridas: 111,
         fundo: JAGUARFundo,
         cor: '#B1BDC5'
     },
     {
+        nome: 'MAHINDRA RACING',
         time: MAHINDRA,
         carro: MAHINDRACarro,
         vitorias: 5,
@@ -99,6 +105,7 @@ const equipes = [
         cor: '#FF0000'
     },
     {
+        nome: 'MASERATI MSG RACING',
         time: MASSERATI,
         carro: MASSERATICarro,
         vitorias: 10,
@@ -108,15 +115,17 @@ const equipes = [
         cor: '#1B4DFF'
     },
     {
-        time: MCLAREN, 
+        nome: 'NEOM MCLAREN FORMULA E TEAM',
+        time: MCLAREN,
         carro: MCLARENCarro,
         vitorias: 8,
         podios: 26,
-        corridas: 87, 
+        corridas: 87,
         fundo: MCLARENFundo,
         cor: '#FF961B'
     },
     {
+        nome: 'NISSAN FORMULA E TEAM',
         time: NISSAN,
         carro: NISSANCarro,
         vitorias: 19,
@@ -126,6 +135,7 @@ const equipes = [
         cor: '#FF1B1B'
     },
     {
+        nome: 'TAG HEUER PORSCHE FORMULA E TEAM',
         time: HEUER,
         carro: HEUERCarro,
         vitorias: 12,
@@ -136,4 +146,4 @@ const equipes = [
     }
 ]
 
-export default equipes
+export default equipes;
