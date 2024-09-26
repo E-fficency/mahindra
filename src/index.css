@@ -90,10 +90,8 @@
 }
 
 .gradient-input {
-  border: none;
+  border: solid 1px rgba(5, 84, 242, 0.95);
   outline: none;
   border-radius: 8px;  
-  background: linear-gradient(white, white) padding-box, linear-gradient(180deg, #14B7ED 0%, rgba(5, 84, 242, 0.95) 100%) border-box; 
-  border: 2px solid transparent;  
-  box-sizing: border-box; 
+  /* background:  rgba(5, 84, 242, 0.95); */
 }

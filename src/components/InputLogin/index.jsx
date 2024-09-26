@@ -12,7 +12,7 @@ const InputLogin = ({ placeholder, eye=false }) => {
       <div className="gradient-input relative w-full p-2 mt-5">
         <input
           type={eye ? showPassword ? "text" : "password": 'text'}
-          className="outline-none"
+          className="outline-none dark:bg-[#333333]"
           placeholder={placeholder}
           required
         />
