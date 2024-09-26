@@ -27,8 +27,8 @@ function App() {
             <Route path="/corridas" element={<Corridas />} />
             <Route path="/classificacao" element={<Classificacao />} />
             <Route path="/equipes" element={<Equipes />} />
-            <Route path="perfil" element={<Perfil/>}/>
-            <Route path="error" element={<Error/>}/>
+            <Route path="/perfil" element={<Perfil/>}/>
+            <Route path="/*" element={<Error/>}/>
           </Routes>
         <Footer />
         </BrowserRouter>
