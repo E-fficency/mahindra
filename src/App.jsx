@@ -9,6 +9,7 @@ import Equipes from "./pages/Equipes";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Perfil from "./pages/Perfil";
+import Error from "./pages/Error"
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="/classificacao" element={<Classificacao />} />
             <Route path="/equipes" element={<Equipes />} />
             <Route path="perfil" element={<Perfil/>}/>
+            <Route path="error" element={<Error/>}/>
           </Routes>
         <Footer />
         </BrowserRouter>
