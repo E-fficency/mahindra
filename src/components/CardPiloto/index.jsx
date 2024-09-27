@@ -1,13 +1,29 @@
-import times from "../../mocks/pilotos"; // Certifique-se de que o mock está importado corretamente
+import { useEffect } from "react";
+import times from "../../mocks/pilotos"; 
+import { useState } from "react";
+
+
 
 const CardPiloto = () => {
+
+  const [theme, setTheme] = useState('')
+
+  useEffect(() => {
+    const theme = localStorage.getItem('theme')
+    if(theme === 'dark'){
+      setTheme('dark')
+    } else {
+      setTheme('light')
+    }
+  }, [])
   return (
     <>
       {times.map((time, index) => (
         <section key={index} className="flex flex-col items-center justify-center border-y border-b-black py-6 dark:border-b-white">
           {/* Logo do Time */}
           <div>
-            <img src={time.time} width={"150px"} alt={`Logo do time ${time.time}`} />
+            {/* <img src={time.time} width={"150px"} alt={`Logo do time ${time.time}`} /> */}
+            {theme === 'dark' ? <img src={time.timeBranco}/> : <img src={time.time}/> } 
           </div>
 
           <div className="flex flex-col gap-10 xl:flex-row">

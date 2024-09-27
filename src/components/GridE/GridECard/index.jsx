@@ -22,7 +22,7 @@ const GridECard = () => {
         </div>
       </div>
 
-      <button className="py-3 px-9 text-white font-bold text-xl bg-text-gradient rounded-md">Ver perfil</button>
+      <button className="py-3 px-9 text-white font-bold text-xl bg-text-gradient rounded-md hover:opacity-80">Ver perfil</button>
     </div>
     
   );
