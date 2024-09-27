@@ -10,7 +10,7 @@ const CardEquipe = () => {
     return (  
         <>
         {equipes.map((equipe) => (
-             <div key={equipe.nome} className="flex flex-col items-center px-6 py-6 rounded-xl w-full gap-4 relative z-5 overflow-hidden card-equipe mb-3 xl:w-auto mt-3 xl:bg-slate-100 dark:bg-slate-300 ">
+             <div key={equipe.nome} className="flex flex-col items-center px-6 py-6 rounded-xl w-full gap-4 relative z-10 overflow-hidden card-equipe mb-3 xl:w-auto mt-3 xl:bg-slate-100 dark:bg-slate-300 ">
                 
                 <div className='flex justify-around w-full xl:flex-col xl:gap-2'>
                     <div className='xl:flex xl:flex-col xl:gap-2'>
