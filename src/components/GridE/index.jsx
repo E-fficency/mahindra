@@ -19,9 +19,9 @@ const GridE = () => {
   }, [])
 
   return (
-    <section className=" py-6 ">
+    <section className="py-6 ">
       <div className="flex flex-col items-center text-center gap-4">
-        {theme == 'dark' ? <img src={GridTittleWhite} /> : <img src={GridTittle}/> }
+        {theme === 'dark' ? <img src={GridTittleWhite} /> : <img src={GridTittle}/> }
         <p className="text-xl dark:text-white">Monte seu pódio e ganhe pontos em ligas personalizadas</p>
       </div>
       <div className="flex flex-col justify-between xl:flex-row">
