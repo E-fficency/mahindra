@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import GridTittle from "../../assets/grid-e/grid-e-tittle.svg";
 import GridTittleWhite from "../../assets/grid-e/grid-e-tittle-darkmode.svg";
 import GridECard from "./GridECard";
+import GridCardUser from "./GridLigaCard";
+import GridETabelaCard from "./GridETabelaCard";
 
 const GridE = () => {
 
@@ -17,12 +19,16 @@ const GridE = () => {
   }, [])
 
   return (
-    <section className=" border-b-black py-6 dark:border-b-white">
+    <section className=" py-6 ">
       <div className="flex flex-col items-center text-center gap-4">
-        {theme == 'dark' ? <img src={GridTittle} /> : <img src={GridTittleWhite}/> }
+        {theme == 'dark' ? <img src={GridTittleWhite} /> : <img src={GridTittle}/> }
         <p className="text-xl dark:text-white">Monte seu pódio e ganhe pontos em ligas personalizadas</p>
       </div>
-      <GridECard/>
+      <div className="flex flex-col justify-between xl:flex-row">
+        <GridECard/>
+        <GridCardUser/>
+        <GridETabelaCard/>
+      </div>
     </section>
   );
 };
