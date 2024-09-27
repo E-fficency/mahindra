@@ -29,14 +29,14 @@ const MenuHamburguer = ({ menuOpen, setMenuOpen }) => {
         onClick={() => setMenuOpen(!menuOpen)}
         className={`${
           menuOpen ? "left-0" : "-left-[100%]"
-        } absolute top-0 transition-all bg-[#0000004f] w-full h-full z-9`}
+        } absolute top-0 transition-all bg-[#0000004f] w-full h-full z-11`}
       >
         &nbsp;
       </div>
       <aside
         className={`${
           menuOpen ? "left-0" : "-left-[320px]"
-        } flex flex-col bg-white shadow-grid-shadow absolute transition-all top-0 rounded-r-lg w-[313px] px-5 py-10 gap-4 h-full dark:bg-[#575757] z-10`}
+        } flex flex-col bg-white shadow-grid-shadow absolute transition-all top-0 rounded-r-lg w-[313px] px-5 py-10 gap-4 h-full dark:bg-[#575757] z-20`}
       >
         <div className="mb-5">
           <img src={LogoExtentida} alt="Logo extendida" />
