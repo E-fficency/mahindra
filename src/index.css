@@ -4,6 +4,7 @@
 
 * {
   font-family: 'Exo 2', sans-serif;
+  transition: all .2s ease-in
 }
 
 @layer {
