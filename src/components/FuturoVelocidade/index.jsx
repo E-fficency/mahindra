@@ -1,3 +1,4 @@
+import { Carroca } from "../ModeloCarro";
 
 const FuturoVelocidade = () => {
   return (
@@ -9,7 +10,7 @@ const FuturoVelocidade = () => {
         </h1>
       </div>
         <div className="flex justify-center">
-          <iframe src="https://m4tiolli.github.io/obj/"  className="border-0 border-none rounded-xl h-4/5 xl:w-2/4"/>
+          <Carroca />
         </div>
     </section>
     </>
