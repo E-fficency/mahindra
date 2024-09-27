@@ -6,6 +6,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 export const Carroca = () => {
   const mountRef = useRef(null);
   const [colorMode, setColorMode] = useState(0xffffff);
+
   useEffect(() => {
     const theme = localStorage.getItem('theme');
     setColorMode(theme === "dark" ? 0x333333 : 0xffffff);
@@ -16,12 +17,11 @@ export const Carroca = () => {
     renderer.outputColorSpace = THREE.SRGBColorSpace;
     renderer.setSize(600, 300);
     renderer.setClearColor(colorMode);
-    renderer.setPixelRatio(2);
+    renderer.setPixelRatio(window.devicePixelRatio);
     renderer.shadowMap.enabled = false;
-    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(15, 400 / 200, 1, 1000);
+    const camera = new THREE.PerspectiveCamera(15, 600 / 300, 1, 1000);
     camera.position.set(7, 3, 7);
 
     const controls = new OrbitControls(camera, renderer.domElement);
@@ -61,6 +61,8 @@ export const Carroca = () => {
       scene.add(mesh);
     });
 
+    mountRef.current.appendChild(renderer.domElement);
+
     const animate = () => {
       requestAnimationFrame(animate);
       controls.update();
@@ -69,23 +71,22 @@ export const Carroca = () => {
 
     animate();
 
-    mountRef.current.appendChild(renderer.domElement);
-
     const handleResize = () => {
-      camera.aspect = 400 / 200;
+      camera.aspect = window.innerWidth / window.innerHeight;
       camera.updateProjectionMatrix();
-      renderer.setSize(400, 200);
-      window.location.reload()
+      renderer.setSize(window.innerWidth, window.innerHeight);
     };
 
     window.addEventListener('resize', handleResize);
 
     return () => {
       window.removeEventListener('resize', handleResize);
-      mountRef.current.removeChild(renderer.domElement);
+      if (mountRef.current) {
+        mountRef.current.removeChild(renderer.domElement);
+      }
       renderer.dispose();
     };
-  });
+  }, [colorMode]);
 
   return <div ref={mountRef} />;
 };

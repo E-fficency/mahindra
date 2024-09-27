@@ -29,7 +29,6 @@ function App() {
             <Route path="/equipes" element={<Equipes />} />
             <Route path="/perfil" element={<Perfil />} />
             <Route path="/*" element={<Error />} />
-            <Route path="/modelo" element={<Carroca />} />
           </Routes>
           <Footer />
         </BrowserRouter>
