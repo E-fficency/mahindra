@@ -10,18 +10,28 @@ import usa from "../assets/flags/us.svg";
 import indi from "../assets/flags/in.svg";
 import pt from "../assets/flags/pt.svg";
 import ge from "../assets/flags/ge.svg";
-import bar from "../assets/flags/bar.svg";
 import ABT from "../assets/Times FE/ABT/ABT.svg";
-import ANDRETTI from "../assets/Times FE/ANDRETTI/Andretti.svg";
+import ABTBranco from '../assets/Times FE/ABT/ABT Branco.svg'
+import ANDRETTI from "../assets/Times FE/ANDRETTI/Andretti.svg";  
+import ANDRETTIBranco from '../assets/Times FE/ANDRETTI/Andretti Branco.svg'
 import DSPENSKE from "../assets/Times FE/DS PENSKE/DS Penske.svg";
+import DSPENSKEBranco from "../assets/Times FE/DS PENSKE/DS Penske Branco.svg";
 import ENVISION from "../assets/Times FE/ENVISION/ENVISION.svg";
+import ENVISIONBranco from "../assets/Times FE/ENVISION/ENVISION Branco.svg";
 import ERT from "../assets/Times FE/ERT/ERT.svg";
+import ERTBranco from "../assets/Times FE/ERT/ERT Branco.svg";
 import JAGUAR from "../assets/Times FE/JAGUAR TCS/Jaguar TCS.svg";
+import JAGUARBranco from "../assets/Times FE/JAGUAR TCS/Jaguar TCS Branco.svg";
 import MAHINDRA from "../assets/Times FE/MAHINDRA/Mahindra.svg";
+import MAHINDRABranco from "../assets/Times FE/MAHINDRA/Mahindra Branco.svg";
 import MASSERATI from "../assets/Times FE/MASSERATI MSG/Masserati MSG.svg";
+import MASSERATIBranco from "../assets/Times FE/MASSERATI MSG/Masserati MSG Branco.svg";
 import MCLAREN from "../assets/Times FE/NEOM MCLAREN/NEOM McLaren.svg";
+import MCLARENBranco from "../assets/Times FE/NEOM MCLAREN/NEOM McLaren Branco.svg";
 import NISSAN from "../assets/Times FE/NISSAN/Nissan.svg";
+import NISSANBranco from "../assets/Times FE/NISSAN/Nissan Branco.svg";
 import HEUER from "../assets/Times FE/TAG HEUER PORSCHE/Tag Heuer Porsche.svg";
+import HEUERBranco from "../assets/Times FE/TAG HEUER PORSCHE/Tag Heuer Porsche Branco.svg";
 import LucasDiGrasssi from "../assets/Times FE/ABT/Lucas Di Grassi.png";
 import NicoMuller from "../assets/Times FE/ABT/Nico Muller.png";
 import Kelvin from "../assets/Times FE/ABT/Kelvin Van Der Linde.png";
@@ -53,14 +63,31 @@ import AntonioFelixDaCosta from "../assets/Times FE/TAG HEUER PORSCHE/Antonio Fe
 const pilotos = [
   {
     time: ABT,
+    timeBranco: ABTBranco,
     piloto: [
-      { nome: "LUCAS", sobrenome: "DI GRASSI", fotoPiloto: LucasDiGrasssi, nacionalidade: br },
-      { nome: "NICO", sobrenome: "MULLER", fotoPiloto: NicoMuller, nacionalidade: sui },
-      { nome: "KELVIN", sobrenome: "VAN DER LINDE", fotoPiloto: Kelvin, nacionalidade: es },
+      { 
+        nome: "LUCAS", 
+        sobrenome: "DI GRASSI", 
+        fotoPiloto: LucasDiGrasssi, 
+        nacionalidade: br 
+      },
+      { 
+        nome: "NICO", 
+        sobrenome: "MULLER", 
+        fotoPiloto: NicoMuller, 
+        nacionalidade: sui 
+      },
+      { 
+        nome: "KELVIN", 
+        sobrenome: "VAN DER LINDE", 
+        fotoPiloto: Kelvin, 
+        nacionalidade: es 
+      },
     ],
   },
   {
     time: ANDRETTI,
+    timeBranco: ANDRETTIBranco,
     piloto: [
       {
         nome: "JAKE",
@@ -74,17 +101,12 @@ const pilotos = [
         fotoPiloto: NormanNato,
         nacionalidade: fr,
       },
-      {
-        nome: "ZANE",
-        sobrenome: "MALONEY",
-        fotoPiloto: "", // ta sem foto o cabra
-        nacionalidade: bar,
-      },
     ],
   },
 
   {
     time: DSPENSKE,
+    timeBranco: DSPENSKEBranco,
     piloto: [
       {
         nome: "JEAN ERIC",
@@ -98,17 +120,12 @@ const pilotos = [
         fotoPiloto: StoffelVandoorne,
         nacionalidade: be,
       },
-      {
-        nome: "OLIVER",
-        sobrenome: "TURVEY",
-        fotoPiloto: "",
-        nacionalidade: uk,
-      },
     ],
   },
 
   {
     time: ENVISION,
+    timeBranco: ENVISIONBranco,
     piloto: [
       {
         nome: "ROBIN",
@@ -134,6 +151,7 @@ const pilotos = [
   // ert so tem 2 piloto
   {
     time: ERT,
+    timeBranco: ERTBranco,
     piloto: [
       {
         nome: "DAN",
@@ -151,6 +169,7 @@ const pilotos = [
   },
   {
     time: JAGUAR,
+    timeBranco: JAGUARBranco,
     piloto: [
       {
         nome: "MITCH",
@@ -164,17 +183,12 @@ const pilotos = [
         fotoPiloto: NickCassidy,
         nacionalidade: aus,
       },
-      {
-        nome: "TOM",
-        sobrenome: "DILLMANN",
-        fotoPiloto: "",
-        nacionalidade: fr,
-      },
     ],
   },
 
   {
     time: MAHINDRA,
+    timeBranco: MAHINDRABranco,
     piloto: [
       {
         nome: "EDOARDO",
@@ -200,6 +214,7 @@ const pilotos = [
   // masserati so tem 2 piloto
   {
     time: MASSERATI,
+    timeBranco: MASSERATIBranco,
     piloto: [
       {
         nome: "JEHAN",
@@ -217,6 +232,7 @@ const pilotos = [
   },
   {
     time: MCLAREN,
+    timeBranco: MCLARENBranco,
     piloto: [
       {
         nome: "JAKE",
@@ -240,6 +256,7 @@ const pilotos = [
   },
   {
     time: NISSAN,
+    timeBranco: NISSANBranco,
     piloto: [
       {
         nome: "OLIVER",
@@ -263,6 +280,7 @@ const pilotos = [
   },
   {
     time: HEUER,
+    timeBranco: HEUERBranco,
     piloto: [
       {
         nome: "PASCAL",
@@ -275,12 +293,6 @@ const pilotos = [
         sobrenome: "DA COSTA",
         fotoPiloto: AntonioFelixDaCosta,
         nacionalidade: pt,
-      },
-      {
-        nome: "ANDRÉ",
-        sobrenome: "LOTTERER",
-        fotoPiloto: "",
-        nacionalidade: ge,
       },
     ],
   },

@@ -26,7 +26,7 @@ const GridCardUser = () => {
                         <h3>Usuário1</h3>
                         <p className='font-light'>@userformulaE</p>
                     </div>
-                    <span className='text-[#2b9421]'>+29</span>
+                    <span className='text-[#DA1E1E]'>-29</span>
                 </div>
                 <div className='flex justify-between gap-6 items-center mb-4'>
                     <div>
