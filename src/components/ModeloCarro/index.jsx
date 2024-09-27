@@ -15,28 +15,25 @@ export const Carroca = () => {
   useEffect(() => {
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.outputColorSpace = THREE.SRGBColorSpace;
-    renderer.setSize(600, 300);
+    renderer.setSize(800, 300);
     renderer.setClearColor(colorMode);
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.shadowMap.enabled = false;
 
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(15, 600 / 300, 1, 1000);
+    const camera = new THREE.PerspectiveCamera(12, 800 / 300, 1, 1000);
     camera.position.set(7, 3, 7);
 
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true;
     controls.enablePan = false;
-    controls.minDistance = 5;
-    controls.maxDistance = 200;
+    controls.minDistance = 14;
+    controls.maxDistance = 100;
     controls.minPolarAngle = 0.5;
     controls.maxPolarAngle = 1.5;
-    controls.autoRotate = false;
+    controls.autoRotate = true;
     controls.target.set(0, 1.5, 0);
     controls.update();
-
-    const groundGeometry = new THREE.PlaneGeometry(20, 20);
-    groundGeometry.rotateX(-Math.PI / 2);
 
     const directionalLight1 = new THREE.DirectionalLight(0xffffff, 10);
     directionalLight1.position.set(-10, 10, 5);
@@ -74,7 +71,7 @@ export const Carroca = () => {
     const handleResize = () => {
       camera.aspect = window.innerWidth / window.innerHeight;
       camera.updateProjectionMatrix();
-      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setSize(window.innerWidth - 200, window.innerHeight - 100);
     };
 
     window.addEventListener('resize', handleResize);
