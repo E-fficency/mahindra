@@ -11,8 +11,9 @@
   .custom-item {
     @apply flex items-center justify-between font-medium text-2xl;
   }
-  .lista-card-piloto{
-    @apply flex items-center gap-4 text-2xl font-bold 
+
+  .lista-card-piloto {
+    @apply flex items-center gap-4 text-2xl font-bold
   }
 }
 
@@ -31,7 +32,8 @@
 .linkes:hover::after {
   width: 100%;
 }
-.cardisgraca > .ibagem {
+
+.cardisgraca>.ibagem {
   transform: translateY(30px);
   transition: all ease-out 0.8s;
 }
@@ -49,11 +51,9 @@
 }
 
 .cardisgraca {
-  background-image: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 10.11%,
-    #5073f1 30.11%
-  );
+  background-image: linear-gradient(180deg,
+      rgba(255, 255, 255, 0) 10.11%,
+      #5073f1 30.11%);
   background-size: 100% 300%;
   transition: all ease-out 0.5s;
 }
@@ -62,11 +62,11 @@
   background-size: 100% 200%;
 }
 
-.imagem-carro{
+.imagem-carro {
   transform: translateX(10px)
 }
 
-.card-equipe:hover .imagem-carro{
+.card-equipe:hover .imagem-carro {
   transform: translateX(-20px);
   transition: all ease-out 0.8s;
 }
@@ -84,15 +84,36 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;  
+  bottom: 0;
   width: 100%;
-  height: 1.5px; 
+  height: 1.5px;
   background: linear-gradient(180deg, #14B7ED 0%, rgba(5, 84, 242, 0.95) 100%);
 }
 
 .gradient-input {
   border: solid 1px rgba(5, 84, 242, 0.95);
   outline: none;
-  border-radius: 8px;  
+  border-radius: 8px;
   /* background:  rgba(5, 84, 242, 0.95); */
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+/* fundo do scrollbar */
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+html[class="dark"] > ::-webkit-scrollbar-track {
+  background-color: #333;
+}
+
+/* botao do scrollbar  */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #14B7ED 0%, rgba(5, 84, 242, 0.95) 100%);
+  border-radius: 5px;
+  cursor: pointer;
 }
