@@ -45,7 +45,7 @@ export const Carroca = () => {
     directionalLight2.castShadow = true;
     scene.add(directionalLight2);
 
-    const loader = new GLTFLoader().setPath('./car/');
+    const loader = new GLTFLoader().setPath('./mahindra/car/');
     loader.load('fe.gltf', (gltf) => {
       const mesh = gltf.scene;
       mesh.traverse((child) => {
@@ -68,16 +68,7 @@ export const Carroca = () => {
 
     animate();
 
-    const handleResize = () => {
-      camera.aspect = window.innerWidth / window.innerHeight;
-      camera.updateProjectionMatrix();
-      renderer.setSize(window.innerWidth - 200, window.innerHeight - 100);
-    };
-
-    window.addEventListener('resize', handleResize);
-
     return () => {
-      window.removeEventListener('resize', handleResize);
       if (mountRef.current) {
         mountRef.current.removeChild(renderer.domElement);
       }
