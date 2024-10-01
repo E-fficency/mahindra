@@ -45,7 +45,7 @@ export const Carroca = () => {
     directionalLight2.castShadow = true;
     scene.add(directionalLight2);
 
-    const loader = new GLTFLoader().setPath('./mahindra/car/');
+    const loader = new GLTFLoader().setPath('./car/');
     loader.load('fe.gltf', (gltf) => {
       const mesh = gltf.scene;
       mesh.traverse((child) => {
