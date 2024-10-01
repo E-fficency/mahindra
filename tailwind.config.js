@@ -15,6 +15,7 @@ export default {
       },
       boxShadow: {
         'grid-shadow': ' 1px 1px 10px -1px #0D0D0D',
+        'data-shadow': '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
       },
     },
   },
