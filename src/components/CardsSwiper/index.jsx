@@ -34,7 +34,7 @@ const CardsSlider = () => {
         </p>
       </div>
 
-      <div className="w-full flex items-center justify-between">
+      <div className="w-full h-[400px] flex items-center justify-between relative">
         <CardCorrida bandeira={brasil} pista={pista} />
         <CardCorrida bandeira={brasil} pista={pista} />
         <CardCorrida bandeira={brasil} pista={pista} />
