@@ -3,7 +3,7 @@ import Logo from '../../../assets/user.svg'
 const GridETabelaCard = () => {
     return (
         <>
-         <div className="flex flex-col justify-start items-center bg-[#B1BDC5] rounded-lg shadow-grid-shadow mt-7 p-7 w-full xl:w-auto dark:bg-[#B1BDC5]">
+         <div className="flex flex-col justify-start items-center bg-[#00000003] rounded-lg shadow-md border border-[#00000030] mt-7 p-7 w-full xl:w-auto dark:bg-[#00000034] dark:text-white">
                 <div className="flex flex-col items-center">
                     <h2 className="text-3xl">Liga FIAP</h2>
                     <h4 className="font-medium text-base">Tabela atualizada</h4>

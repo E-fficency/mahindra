@@ -7,6 +7,12 @@
   transition: all .2s ease-in
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden
+  }
+}
+
 @layer {
   .custom-item {
     @apply flex items-center justify-between font-medium text-2xl;
