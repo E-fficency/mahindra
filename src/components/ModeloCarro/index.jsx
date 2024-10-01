@@ -46,7 +46,7 @@ export const Carroca = () => {
     scene.add(directionalLight2);
 
     const loader = new GLTFLoader().setPath('./car/');
-    loader.load('fe.gltf', (gltf) => {
+    loader.load('Carro.gltf', (gltf) => {
       const mesh = gltf.scene;
       mesh.traverse((child) => {
         if (child.isMesh) {

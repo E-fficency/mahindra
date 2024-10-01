@@ -4,6 +4,8 @@ import CardCorrida from "../CardCorrida";
 import { useEffect, useState } from "react";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import "swiper/css";
+import pista from '../../assets/Pistas/Brasil.png'
+import brasil from '../../assets/flags/br.svg'
 
 const CardsSlider = () => {
   const [slidesPerView, setSlidesPerView] = useState(2);
@@ -32,13 +34,16 @@ const CardsSlider = () => {
         </p>
       </div>
 
-      <Swiper spaceBetween={30} slidesPerView={slidesPerView}>
-        {cards.map((card) => (
-          <SwiperSlide key={card.id}>
-            <CardCorrida {...card} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <div className="w-full flex items-center justify-between">
+        <CardCorrida bandeira={brasil} pista={pista} />
+        <CardCorrida bandeira={brasil} pista={pista} />
+        <CardCorrida bandeira={brasil} pista={pista} />
+        <CardCorrida bandeira={brasil} pista={pista} />
+        <CardCorrida bandeira={brasil} pista={pista} />
+        <CardCorrida bandeira={brasil} pista={pista} />
+        <CardCorrida bandeira={brasil} pista={pista} />
+        <CardCorrida bandeira={brasil} pista={pista} />
+      </div>
     </section>
   );
 };
