@@ -28,6 +28,11 @@ import MCPista from '../assets/Percursos/mc.svg'
 
 import GE from '../assets/Pistas/Alemanha.png'
 import ge from '../assets/flags/ge.svg'
+import GEPista from '../assets/Percursos/ge.svg'
+
+import CH from '../assets/Pistas/Hong Kong.png'
+import ch from '../assets/flags/ch.svg'
+import CHPista from '../assets/Percursos/ch.svg'
 
 const cards = [
     {
@@ -116,6 +121,18 @@ const cards = [
         corrida: 'Corrida 9 & 10',
         cidadeEPrix: '2024 Sun Minimeal Berlim E-Prix',
         cidadePais: 'Berlim, Alemanha',
+        percurso: GEPista
+    },
+    {
+        pista: CH,
+        bandeira: ch,
+        dia: '25',
+        mes: 'Maio',
+        cidade: 'Hong Kong, China',
+        corrida: 'Corrida 11',
+        cidadeEPrix: '2024 Hong Kong E-Prix',
+        cidadePais: 'Hong Kong, China',
+        percurso: CHPista
     }
 ]
 
