@@ -1,27 +1,23 @@
 .card {
-  flex: 1;
-  /* Permite que os cards ocupem todo o espaço disponível */
+  display: flex;
+  justify-content: center;
+  flex: 0.7;
   height: 100%;
-  /* Faz com que o card ocupe a altura total do container */
   border-radius: 25px;
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
   transition: flex-grow 0.3s ease, box-shadow 0.3s ease;
-  /* Transição para flex-grow */
   margin: 0 8px;
-  /* Define uma margem horizontal para simular o gap */
+  overflow: hidden;
 }
 
 .card:hover {
   flex-grow: 3;
-  /* Expande o card em hover para ocupar mais espaço */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  /* Adiciona sombra para destaque */
 }
 
 .bg-card {
+  background-color: white; 
   width: 100%;
   height: 100%;
   position: absolute;
@@ -29,10 +25,38 @@
   left: 0;
   object-fit: cover;
   border-radius: 25px;
+ 
 }
 
 .bandeira {
   position: absolute;
   bottom: 20px;
-  width: 4rem;
+  z-index: 1;
+}
+
+.info {
+  color: white;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .bg-card{
+  opacity: 50%
+}
+
+.card:hover .info {
+  opacity: 1;
+}
+.card:hover .bandeira {
+  opacity: 0; /* Faz a bandeira desaparecer no hover */
+}
+
+.info h2 {
+  font-weight: 300;
+}
+
+.info p {
+  font-size: 1rem;
+  font-family: "Trispace", sans-serif;
 }

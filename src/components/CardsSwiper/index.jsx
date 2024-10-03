@@ -1,24 +1,9 @@
-import { Swiper, SwiperSlide } from "swiper/react";
 import cards from "../../mocks/cards";
 import CardCorrida from "../CardCorrida";
-import { useEffect, useState } from "react";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-import "swiper/css";
-import pista from '../../assets/Pistas/Brasil.png'
-import brasil from '../../assets/flags/br.svg'
+
 
 const CardsSlider = () => {
-  const [slidesPerView, setSlidesPerView] = useState(2);
-
-  function handleResize() {
-    if (window.innerWidth > 720) {
-      setSlidesPerView(8);
-    }
-  }
-
-  useEffect(() => {
-    handleResize();
-  }, []);
 
   return (
     <section className="my-6 border-y py-5 border-black text-black dark:border-white">
@@ -35,14 +20,9 @@ const CardsSlider = () => {
       </div>
 
       <div className="w-full h-[400px] flex items-center justify-between relative">
-        <CardCorrida bandeira={brasil} pista={pista} />
-        <CardCorrida bandeira={brasil} pista={pista} />
-        <CardCorrida bandeira={brasil} pista={pista} />
-        <CardCorrida bandeira={brasil} pista={pista} />
-        <CardCorrida bandeira={brasil} pista={pista} />
-        <CardCorrida bandeira={brasil} pista={pista} />
-        <CardCorrida bandeira={brasil} pista={pista} />
-        <CardCorrida bandeira={brasil} pista={pista} />
+        {cards.map((card, index) => (
+          <CardCorrida {...card} key={index} />
+        ))}
       </div>
     </section>
   );
