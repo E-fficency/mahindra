@@ -10,11 +10,12 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Perfil from './pages/Perfil';
 import Error from './pages/Error';
+import GridE from './pages/Grid-E';
 
 function App() {
   return (
     <>
-      <main className="px-5 xl:px-12 dark:bg-[#333333]">
+      <main className="px-5 xl:px-12 dark:bg-[#333333] min-h-screen">
         <HashRouter>
           {/* O header e o footer estão fora da tag routes pq eles aparecem em todas as paginas e não precisam de uma rota específica */}
           <Header />
@@ -27,6 +28,7 @@ function App() {
             <Route path="/classificacao" element={<Classificacao />} />
             <Route path="/equipes" element={<Equipes />} />
             <Route path="/perfil" element={<Perfil />} />
+            <Route path="/grid-e" element={<GridE />} />
             <Route path="/*" element={<Error />} />
           </Routes>
           <Footer />

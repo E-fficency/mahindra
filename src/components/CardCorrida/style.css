@@ -42,7 +42,7 @@
 }
 
 .card:hover .bg-card{
-  opacity: 50%
+  filter: brightness(.5);
 }
 
 .card:hover .info {
