@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import Grid from './Grid';
 import Equipe from './Equipe';
 import { useState } from 'react';
+import Ligas from './Ligas';
 
 function GridE() {
   const gridRef = useRef(null);
@@ -11,7 +12,7 @@ function GridE() {
 
   const [ativo, setAtivo] = useState(0);
 
-  const telas = [<Grid key={0} />, <Equipe key={1} />];
+  const telas = [<Grid key={0} />, <Equipe key={1} />, <Ligas key={2} />];
 
   useEffect(() => {
     const refs = [gridRef, equipeRef, ligasRef, pontosRef];

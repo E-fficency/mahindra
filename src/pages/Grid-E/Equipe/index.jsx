@@ -7,7 +7,7 @@ function Equipe() {
   const circuitoRef = useRef(null);
 
   useEffect(() => {
-    circuitoRef.current.style.backgroundImage = `uri(${circuito})`;
+    circuitoRef.current.style.backgroundImage = `url(${circuito})`;
   });
 
   return (
