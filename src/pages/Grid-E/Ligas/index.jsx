@@ -1,11 +1,11 @@
 import GridECard from "../../../components/GridE/GridECard";
 import Liga from "../../../components/GridE/Liga";
-import Destaque from "../Destaque";
+import Destaque from "../../../components/GridE/Destaque";
 
 function Ligas() {
   return (
     <>
-      <div className="grid grid-cols-[1fr_2fr_1fr] w-full gap-10 items-center justify-between">
+      <div className="grid grid-cols-1 sm:grid-cols-[1fr_2fr_1fr] w-full gap-10 justify-between">
         <div>
           <div className="text-center">
             <h2 className="font-semibold text-3xl">Seu perfil</h2>
@@ -22,17 +22,19 @@ function Ligas() {
           <Liga />
         </div>
 
-        <div className="h-full">
+        <div className="">
           <div className="text-center">
             <h2 className="font-semibold text-3xl">Dicas</h2>
             <p>Destaques da semana</p>
           </div>
           <Destaque />
         </div>
-
       </div>
     </>
   );
 }
 
 export default Ligas;
+
+
+
