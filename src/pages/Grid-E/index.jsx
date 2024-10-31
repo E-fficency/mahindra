@@ -10,7 +10,9 @@ function GridE() {
   const ligasRef = useRef(null);
   const pontosRef = useRef(null);
 
-  const [ativo, setAtivo] = useState(0);
+  const paginaSalva = localStorage.getItem("last-page")
+
+  const [ativo, setAtivo] = useState(paginaSalva || 0);
 
   const telas = [<Grid key={0} />, <Equipe key={1} />, <Ligas key={2} />];
 
@@ -30,30 +32,30 @@ function GridE() {
   return (
     <div className="flex flex-col items-center justify-center gap-10 border-b bordao dark:text-white text-[#000000ba4] pb-[13dvh]">
       <nav className="flex items-center justify-center w-full h-[10dvh] border-y bordao ">
-        <ul className="flex items-center justify-center gap-8">
+        <ul className="flex items-center justify-center gap-5">
           <li
-            className="linkes text-xl cursor-pointer linkes-ativo"
+            className="linkes text-sm xl:text-xl cursor-pointer linkes-ativo"
             ref={gridRef}
             onClick={() => setAtivo(0)}
           >
             Grid-E
           </li>
           <li
-            className="linkes text-xl cursor-pointer"
+            className="linkes text-sm xl:text-xl cursor-pointer"
             ref={equipeRef}
             onClick={() => setAtivo(1)}
           >
             Minha equipe
           </li>
           <li
-            className="linkes text-xl cursor-pointer"
+            className="linkes text-sm xl:text-xl cursor-pointer"
             ref={ligasRef}
             onClick={() => setAtivo(2)}
           >
             Minhas ligas
           </li>
           <li
-            className="linkes text-xl cursor-pointer"
+            className="linkes text-sm xl:text-xl cursor-pointer"
             ref={pontosRef}
             onClick={() => setAtivo(3)}
           >
